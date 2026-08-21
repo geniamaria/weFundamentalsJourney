@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excicios aula de logica</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Logica de Programacao</h1>
+    <p> Onde aprendemos como organisar o pensamento de forma organisada de forma</p>
+    <p>ha diferencia entre logica de programacao e linguagem de programacao.Dado o probrema a logica mostranos como resolver problemas ja a liguagem e a forma/ferramentas uadas para resolver um problemas
+    </p>
+    <h3>Os quantro pilares do pensamento computacional sao?</h3>
+    <ul>
+        <li>Decomposisao: Dado o problema grande antes de resolver vamos dividir o em problemas pequenos para facilitar a resolver </li>
+        <li>Reconhecimento de padoes: depois de dividir o problemas, vamos procurara ver quais tem membros/ou podem se resolver da mesma forma e agrupar os membros semelhantes</li>
+        <li>Abstracao: consiste em ignorar os aspectos irrelevantes para a resolucao do problemas, como por exemplo para calcular a media nao preciso de sabar a cor do cabelo do aluno</li>
+        <li>desenho do algoritmo: consite em descreve de forma sequeciada como proseguir para resolver o problema.</li>
+    </ul> 
+    <li>
+        <ol>
+            <li>escreva um algoritmo que leia dois numeros e mostre o maior deles.</li>
+            <li> Escreva um algoritmo que leia 5 notas e calcule a media, usando uma estrutura de repeticao</li>
+            <li> Desenhe o fluxograma de um algortmo que decida se um ano e bissexto</li>
+            <li> Escreva um algoritmo que conte quantos numeros pares existem entre 1 e 100.</li>
+            <li> Monte no Scratch o algoritmo do exercicio1 e partilhe o link do projecto.</li>
+        </ol>
+    </li>
+
+<div>
+
+    Algoritmo "MaiorNumero"
+
+Var
+   num1, num2: real
+
+INICIO
+   Escreva("Digite o primeiro número: ")
+   Leia(num1)
+
+   Escreva("Digite o segundo número: ")
+   Leia(num2)
+
+   Se num1 > num2 Entao
+      Escreva("O maior número é: ", num1)
+   Senao Se num2 > num1 Entao
+      Escreva("O maior número é: ", num2)
+   Senao
+      Escreva("Os dois números são iguais.")
+   FimSe
+
+FIM
+
+
+
+</div>
+<div>
+    Algoritmo "MediaNotas"
+
+Var
+   nota, soma, media: real
+   i: inteiro
+
+INICIO
+   soma <- 0
+
+   Para i <- 1 Ate 5 Faca
+      Escreva("Digite a nota ", i, ": ")
+      Leia(nota)
+
+      soma <- soma + nota
+   FimPara
+
+   media <- soma / 5
+
+   Escreva("A média é: ", media)
+
+FIM
+</div>
+<div>
+    3. Fluxograma para verificar se um ano é bissexto
+
+Um ano é bissexto quando:
+
+é divisível por 400, ou
+é divisível por 4 e não é divisível por 100.
+
+Fluxograma em forma textual:
+
+              INÍCIO
+                 |
+                 ↓
+           Ler o ANO
+                 |
+                 
+                 ↓
+   É divisível por 400?
+          /           \
+       SIM             NÃO
+        |                |
+        ↓                ↓
+  "É bissexto"    É divisível por 4
+                       E não por 100?
+                     /          \
+                   SIM           NÃO
+                    |              |
+                    ↓              ↓
+              "É bissexto"    "Não é bissexto"
+                    \              /
+                     \            /
+                       ↓        ↓
+                          FIM
+</div>
+
+
+
+
+    <li>
+        <ol>
+            <li>Crie um vetor de 10 numeros e escreva uma funcao que conte quantos sao pares</li>
+            <li> Escreva uma funcao que receba um vetor de nomes e devolva a mais comprido.</li>
+                         <li> implemente de forma recursiva um algoritmo que calcule a potencia de um numero.</li>
+            <li> Escreva tres casos de teste para cada funcao criada, incluindo um caso-limite.</li>
+            <li> Corrija um algoritmo com erro com erro entregue pelo formador, documentondo os cinco passos de depueacao</li>
+        </ol>
+    </li>
+    
+</body>
+</html>
