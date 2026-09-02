@@ -15,12 +15,16 @@ const salesWithTotal = sales.map(sale => {
         total: sale.quantidade * sale.precoUnitario
     };
 });
+console.log(salesWithTotal);
 
 //Usar filter para obter apenas as vendas de Maputo e apenas as vendas acima de 1 000 MT.
 const filteredSales = salesWithTotal.filter(sale => sale.cidade === "Maputo" && sale.total > 1000);
 
 //Usar reduce para calcular a receita total, e depois a média por venda.
-const totalRevenue = filteredSales.reduce((accumulator, sale) => accumulator + sale.total, 0);
+const totalRevenue = salesWithTotal.reduce((accumulator, sale) => accumulator + sale.total, 0);
+console.log(totalRevenue);
+const mediaSales = totalRevenue/salesWithTotal.length;
+console.log(mediaSales);
 
 //Aplicar destructuring dentro do forEach para imprimir um relatório linha a linha com template literals.
 filteredSales.forEach(({ produto, quantidade, precoUnitario, cidade, total }) => {
