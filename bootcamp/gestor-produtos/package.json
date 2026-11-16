@@ -1,0 +1,35 @@
+{
+  "name": "gestor-produtos",
+  "version": "1.0.0",
+  "description": "Gestor de Produtos — projecto educativo de TypeScript avançado (tipos, POO, Zod e API externa).",
+  "type": "module",
+  "main": "dist/main.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx src/main.ts",
+    "test": "tsx src/testes.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "meteo": "tsx src/services/meteo.service.ts"
+  },
+  "keywords": [
+    "typescript",
+    "zod",
+    "educacao",
+    "terminal",
+    "poo"
+  ],
+  "author": "Bootcamp weFundamentalsJourney",
+  "license": "MIT",
+  "dependencies": {
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

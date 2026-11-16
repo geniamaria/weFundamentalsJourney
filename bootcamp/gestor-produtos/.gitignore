@@ -1,0 +1,12 @@
+# Dependências instaladas pelo npm
+node_modules/
+
+# JavaScript gerado pelo "npm run build"
+dist/
+
+# Ficheiros de sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

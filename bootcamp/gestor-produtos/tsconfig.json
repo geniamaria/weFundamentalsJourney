@@ -1,0 +1,42 @@
+{
+  // Documentação oficial: https://aka.ms/tsconfig
+  "compilerOptions": {
+    // ---- Onde está o código e para onde vai o JavaScript gerado ----
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // ---- Ambiente: Node.js moderno com módulos ES ----
+    // "nodenext" faz o TypeScript respeitar as regras de módulos do Node.
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "esnext",
+    "lib": ["esnext"],
+    // "node" dá-nos os tipos de "process", "readline", "fetch", etc.
+    "types": ["node"],
+
+    // ---- Ficheiros gerados ----
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // ---- Verificação de tipos mais rigorosa ----
+    // Acesso a um índice devolve "T | undefined" (evita erros escondidos).
+    "noUncheckedIndexedAccess": true,
+    // Impede escrever "undefined" numa propriedade opcional.
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+
+    // ---- Estilo / segurança ----
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+
+    // Permite escrever import "./ficheiro.ts" e reescreve para ".js" ao compilar.
+    // Assim o mesmo código corre no Node (via tsx) e depois de compilado.
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true
+  },
+  "include": ["src"]
+}
