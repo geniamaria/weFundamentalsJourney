@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula2- Img</title>
+</head>
+<body>
+    <h1>Página com Imagens, Tabela e Formulário</h1>
+    <!--Adicionar uma imagem responsiva com srcset e uma figure com legenda-->
+    <img src="img/foto3.jpg"
+    srcset="foto2.jpg 400w,
+    foto2.jpg 800w,
+    foto2.jpg 1600w,"
+    sizes="(max-width: 600px) 100vw,800px,"
+    alt="Ginagio de Maputo"
+    >
+    <!--Construir uma tabela de dados com caption, thead, tbody e uma célula com colspan.-->
+    <p>Construir uma tabela de dados com caption, thead, tbody e uma célula com colspan.</p> 
+    <table>
+        <caption> Tabela de dados </caption>
+        <thead> 
+            <tr>
+                <td> Nome</td><td> idade </td><td> Morada</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Maria Moiane</td> <td>24</td> <td>Matola</td> </tr>
+            <tr><td>Lucas Moiane</td> <td>16</td> <td>Matola</td> </tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="3"> vagas limitdas</td></tr>
+        </tfoot>
+     </table>
+     <p>Criar um formulário de contacto com email, telefone, mensagem e validação nativa (required, pattern).
+</p>
+     <form>
+        <label for="email">Email:</label><br>
+        <input type="text"  name="email" placeholder="digite o email" required><br>
+        <label for="telefone"> Telefone:</label><br>
+        <input type="number" pattern="[0-9]{9}" name="telefone" placeholder="digite o numero de telefone" required><br>
+        <label for="message"> Messagem</label><br>
+        <textarea placeholder="escreva a messagem de validacao">
+
+        </textarea>
+
+     </form>
+</body>
+</html>
