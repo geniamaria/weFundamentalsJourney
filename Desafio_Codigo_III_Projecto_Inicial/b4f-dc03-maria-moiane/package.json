@@ -1,0 +1,13 @@
+{
+  "name": "b4f-dc03-stock-ts",
+  "version": "1.0.0",
+  "description": "Mercearia Xiluva — gestão de stock em TypeScript (Desafio de Código III, Bootcamp Bytes4Future)",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
